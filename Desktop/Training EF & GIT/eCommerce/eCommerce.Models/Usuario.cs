@@ -12,5 +12,6 @@
         public string? SituacaoCadastro { get; set; }
         public DateTimeOffset DateTime { get; set; }
         public Contato? Contato { get; set; }
+        public EnderecoEntrega? EnderecoEntrega { get; set; }
     }
 }
