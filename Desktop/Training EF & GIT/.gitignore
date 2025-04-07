@@ -1,0 +1,37 @@
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+*.DS_Store
+*.vscode/
+*.idea/
+*.vs/
+*.env
+bin/
+obj/
+node_modules/
+AppData/
+Contacts/
+Cookies/
+Documents/
+Downloads/
+Favorites/
+IntelGraphicsProfiles/
+Links/
+Local Settings/
+Music/
+My Documents/
+NetHood/
+NTUSER.DAT*
+OneDrive/
+Pictures/
+PrintHood/
+Recent/
+Saved Games/
+Searches/
+SendTo/
+Start Menu/
+Templates/
+Videos/
+desktop.ini
