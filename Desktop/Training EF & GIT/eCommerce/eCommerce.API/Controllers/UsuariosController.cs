@@ -9,6 +9,7 @@ namespace eCommerce.API.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
+
         private readonly IUsuarioRepository _repository;
 
         public UsuariosController(IUsuarioRepository repository)
@@ -34,14 +35,14 @@ namespace eCommerce.API.Controllers
         }
 
         [HttpPost]
-        public IActionResult Add([FromBody]Usuario usuario)
+        public IActionResult Add([FromBody] Usuario usuario)
         {
             _repository.Add(usuario);
             return Ok(usuario);
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update([FromBody]Usuario usuario, int id)
+        public IActionResult Update([FromBody] Usuario usuario, int id)
         {
             _repository.Update(usuario);
             return Ok(usuario);
