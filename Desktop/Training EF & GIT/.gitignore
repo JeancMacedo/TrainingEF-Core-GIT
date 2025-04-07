@@ -1,3 +1,4 @@
+# Ignorar diretórios do sistema e arquivos indesejados
 *.log
 *.tmp
 *.bak
@@ -19,19 +20,22 @@ Downloads/
 Favorites/
 IntelGraphicsProfiles/
 Links/
-Local Settings/
+Local\ Settings/
 Music/
-My Documents/
+My\ Documents/
 NetHood/
 NTUSER.DAT*
 OneDrive/
 Pictures/
 PrintHood/
 Recent/
-Saved Games/
+Saved\ Games/
 Searches/
 SendTo/
-Start Menu/
+Start\ Menu/
 Templates/
 Videos/
 desktop.ini
+
+# Ignorar links simbólicos problemáticos
+Application\ Data/
