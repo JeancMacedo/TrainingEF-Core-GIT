@@ -12,13 +12,14 @@ namespace eCommerce.API.Repositories
 
         public Usuario Get(int id)
         {
-           return _db.Find(x => x.Id == id)!;
+            return _db.Find(x => x.Id == id)!;
         }
 
         public void Add(Usuario usuario)
         {
             _db.Add(usuario);
         }
+
         public void Update(Usuario usuario)
         {
             _db.Remove(Get(usuario.Id));
