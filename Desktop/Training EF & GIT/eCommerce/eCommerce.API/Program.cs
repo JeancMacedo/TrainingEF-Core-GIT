@@ -13,7 +13,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddDbContext<eCommerceContext>(
-    options => options.UseSqlServer(builder.Configuration.GetConnectionString("eCommerce")
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("eCommerce"))
     );
 
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();

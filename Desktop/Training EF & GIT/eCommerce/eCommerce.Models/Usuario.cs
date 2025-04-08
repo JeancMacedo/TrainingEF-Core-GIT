@@ -1,15 +1,7 @@
 ﻿namespace eCommerce.Models
 {
     public class Usuario
-    {/*
-      * EFCore + Migration:
-      * Tabela: Usuarios
-      * Id - PK
-      * Nome - nvarchar - not null
-      * Email - nvarchar - not null
-      * Sexo - nvarchar - null
-      * ....
-      */
+    {
         public int Id { get; set; }
         public string Nome { get; set; } = null!;
         public string Email { get; set; } = null!;
