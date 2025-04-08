@@ -9,6 +9,7 @@ namespace eCommerce.API.Repositories
         void Add(Usuario usuario);
         void Update(Usuario usuario);
         void Delete(int id);
+
     }
 }
 

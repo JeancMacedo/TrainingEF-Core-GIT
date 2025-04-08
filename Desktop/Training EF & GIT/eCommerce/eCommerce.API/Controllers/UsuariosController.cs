@@ -14,6 +14,7 @@ namespace eCommerce.API.Controllers
         {
             _repository = repository;
         }
+
         [HttpGet]
         public IActionResult Get()
         {
@@ -36,7 +37,7 @@ namespace eCommerce.API.Controllers
             _repository.Add(usuario);
             return Ok(usuario);
         }
-        
+
         [HttpPut("{id}")]
         public IActionResult Update([FromBody]Usuario usuario, int id)
         {
@@ -45,13 +46,20 @@ namespace eCommerce.API.Controllers
         }
 
         [HttpDelete("{id}")]
-        public IActionResult Remove([FromBody]int id)
+        public IActionResult Remove(int id)
         {
             _repository.Delete(id);
             return Ok();
         }
+
+
     }
 }
+
+
+
+
+
 
 
 /*
