@@ -1,12 +1,13 @@
-﻿using Microsoft.Data.SqlClient;
-using Microsoft.EntityFrameworkCore;
-using static System.Net.Mime.MediaTypeNames;
-using System;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace eCommerce.API.Database
 {
     public class eCommerceContext : DbContext
     {
+        public eCommerceContext(DbContextOptions<eCommerceContext> options) : base(options)
+        {
+
+        }
 
         #region Conexão sem distinção de ambientes de execução
 
